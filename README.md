@@ -48,6 +48,19 @@ Files:
 - `Demo9.java`
 - `notes.md`
 
+### 3-Problem-Of-Multithreading
+Contains examples of common problems caused by unsynchronized access to shared data:
+- race conditions and non-atomic updates
+- visibility of shared values
+- ordering and happens-before relationships
+- `yield()` and priority as scheduler hints, not guarantees
+
+Files:
+- `Demo1.java`
+- `Demo2.java`
+- `Demo3.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison

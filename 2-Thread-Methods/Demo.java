@@ -16,9 +16,9 @@ public class Demo {
 }
 
 /*
-Important methods of Thread:
-1. Thread.sleep(milliseconds)
-2. join()
-3. yield()
-4. interrupt()
-*/
+ * Important methods of Thread:
+ * 1. Thread.sleep(milliseconds)
+ * 2. join()
+ * 3. yield()
+ * 4. interrupt()
+ */
