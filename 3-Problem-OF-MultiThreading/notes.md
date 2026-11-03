@@ -31,14 +31,10 @@ In `Demo3.java`, `x` and `flag` are ordinary shared variables. The program has a
 
 Declaring `flag` volatile would establish the needed publication ordering for a write to `x` before the volatile write and a reader that observes that volatile write. Synchronization or another documented happens-before mechanism can also be used.
 
-## Scheduler Hints: `yield()` and Priority
-
-Methods such as `Thread.yield()` and thread-priority settings can suggest scheduling preferences to the JVM/OS scheduler. They do not guarantee that another thread will run, force a context switch, or establish visibility between threads. The scheduler makes the final scheduling decision, so program correctness must not depend on these hints.
-
 ## Summary
 
 - **Atomicity:** an operation completes as one indivisible action; `count++` is not atomic.
 - **Visibility:** a thread sees another thread's updates through mechanisms such as `volatile` or synchronization.
 - **Ordering:** a happens-before relationship constrains what writes another thread can observe and in what order.
 - `join()` waits for thread completion, but does not protect concurrent updates while they run.
-- Prefer explicit synchronization or concurrency utilities over relying on timing, `println()`, `yield()`, or priority.
+- Prefer explicit synchronization or concurrency utilities over relying on timing or `println()`.

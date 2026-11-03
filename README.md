@@ -79,6 +79,21 @@ Files:
 - `Demo7.java`
 - `notes.md`
 
+### 5-Inter-Thread-Communication
+Contains producer-consumer examples and thread coordination patterns:
+- producer-consumer problem
+- busy waiting and why `synchronized` alone is not a communication protocol
+- `wait()`, `notify()`, and guarded blocks
+- `sleep()` vs `wait()`
+- spurious wake-ups and why conditions must be checked in a loop
+- how using `notify()` with multiple waiters can prevent progress
+
+Files:
+- `Demo1.java`
+- `Demo2.java`
+- `Demo3.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison
@@ -93,6 +108,9 @@ Files:
 - How Java locks work internally using object monitors
 - synchronized object lock vs class lock
 - when synchronization fails because the lock object is different
+- producer-consumer coordination
+- busy waiting vs monitor-based waiting
+- `wait()` / `notify()` and spurious wake-ups
 
 ## How to Run
 Compile the Java files using:

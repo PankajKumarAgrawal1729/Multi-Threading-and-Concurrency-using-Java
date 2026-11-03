@@ -103,19 +103,7 @@ This ensures mutual exclusion for the critical section.
 
 ---
 
-## 9) Thread scheduling hint: yield()
-`yield()` is a method that suggests to the operating system that the current thread can pause and allow other threads to run.
-
-However:
-- it is only a suggestion
-- the OS decides what to do
-- the final scheduling decision is always taken by the operating system or JVM scheduler
-
-So, just like other scheduling hints, `yield()` does not guarantee immediate thread switching.
-
----
-
-## 10) Real-world use of locks
+## 9) Real-world use of locks
 Locks are used to protect:
 - shared counters
 - bank account balances
@@ -125,15 +113,12 @@ Locks are used to protect:
 
 ---
 
-## 11) Summary
+## 10) Summary
 - `synchronized` uses a monitor lock associated with an object or class.
 - Only one thread can own a monitor at a time.
 - Other threads wait until the lock is released.
 - Locks ensure mutual exclusion, visibility, and ordering for critical sections.
-- `yield()` is just a scheduling hint; the OS still decides the final behavior.
 - Using the wrong lock object can break synchronization completely.
 
 ---
 
-## 12) Key Interview Point
-"Java locks are built on object monitors. The monitor is acquired by one thread at a time, and other threads wait in the lock queue until it is released. The scheduler may also accept or ignore hints like `yield()`, but it always makes the final decision."
