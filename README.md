@@ -61,6 +61,24 @@ Files:
 - `Demo3.java`
 - `notes.md`
 
+### 4-Monitor-Locks
+Contains examples of Java monitor-based synchronization and locking behavior:
+- `synchronized` methods and blocks
+- object locks vs class locks
+- critical sections and shared resource protection
+- why using the wrong lock object breaks synchronization
+- how locks work internally through object monitors
+
+Files:
+- `Demo1.java`
+- `Deemo2.java`
+- `Demo3.java`
+- `Demo4.java`
+- `Demo5.java`
+- `Demo6.java`
+- `Demo7.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison
@@ -71,6 +89,10 @@ Files:
 - One thread cannot be started more than once
 - Thread life cycle
 - Scheduling suggestions like `yield()` and OS control
+- Monitor locks and synchronization
+- How Java locks work internally using object monitors
+- synchronized object lock vs class lock
+- when synchronization fails because the lock object is different
 
 ## How to Run
 Compile the Java files using:
