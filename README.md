@@ -94,6 +94,18 @@ Files:
 - `Demo3.java`
 - `notes.md`
 
+### 6-Locks
+Contains examples of explicit Java locks and concurrency utilities:
+- `ReentrantLock` and the `Lock` interface
+- `ReadWriteLock` for concurrent reads and exclusive writes
+- `StampedLock` optimistic reads and validation
+- semaphores for limiting concurrent access and bounded buffers
+- lock conditions with `await()`, `signal()`, and `signalAll()` (covered in notes)
+
+Files:
+- `Demo1.java` through `Demo5.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison
@@ -111,6 +123,10 @@ Files:
 - producer-consumer coordination
 - busy waiting vs monitor-based waiting
 - `wait()` / `notify()` and spurious wake-ups
+- explicit `Lock` APIs and their advantages over intrinsic monitors
+- pessimistic locking, optimistic reads, and lock downgrading
+- semaphore permits and differences between semaphores and locks
+- read/write lock starvation considerations and conditions
 
 ## How to Run
 Compile the Java files using:
