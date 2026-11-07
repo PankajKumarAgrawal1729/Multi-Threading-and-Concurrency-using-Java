@@ -106,6 +106,17 @@ Files:
 - `Demo1.java` through `Demo5.java`
 - `notes.md`
 
+### 7-Lock-Free-Concurrency
+Contains atomic-variable and compare-and-set examples:
+- `AtomicInteger` and `AtomicReference`
+- CAS-based state updates
+- ABA problem and versioned CAS with `AtomicStampedReference`
+- lock vs CAS tradeoffs and lock-free progress concepts
+
+Files:
+- `Demo1.java` through `Demo4.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison
@@ -127,6 +138,8 @@ Files:
 - pessimistic locking, optimistic reads, and lock downgrading
 - semaphore permits and differences between semaphores and locks
 - read/write lock starvation considerations and conditions
+- atomic variables and atomic references
+- compare-and-set, lock-free progress, and ABA mitigation with versioning
 
 ## How to Run
 Compile the Java files using:
