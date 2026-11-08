@@ -117,6 +117,18 @@ Files:
 - `Demo1.java` through `Demo4.java`
 - `notes.md`
 
+### 8-Executor-Framework
+Contains examples of task submission, executor pools, scheduling, and rejection handling:
+- `Runnable`, `Callable`, and `Future`
+- `ThreadFactory` and exception reporting for `execute()` vs `submit()`
+- `ThreadPoolExecutor` configuration and blocking queues
+- cached, single-thread, and scheduled executors
+- abort, discard, and discard-oldest rejection policies
+
+Files:
+- `Demo1.java` through `Demo8.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison
@@ -140,6 +152,8 @@ Files:
 - read/write lock starvation considerations and conditions
 - atomic variables and atomic references
 - compare-and-set, lock-free progress, and ABA mitigation with versioning
+- executor hierarchy, futures, and executor lifecycle
+- thread pools, blocking queues, scheduling, and rejection policies
 
 ## How to Run
 Compile the Java files using:
