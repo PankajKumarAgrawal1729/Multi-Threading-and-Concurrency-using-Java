@@ -129,6 +129,18 @@ Files:
 - `Demo1.java` through `Demo8.java`
 - `notes.md`
 
+### 9-Extra-Concepts
+Contains examples of advanced concurrency APIs and execution models:
+- `CompletableFuture` chaining and result combination
+- `ForkJoinPool` divide-and-conquer tasks
+- `ThreadLocal` context and cleanup on pooled workers
+- virtual-thread-per-task executors
+- `Future` overloads and limitations
+
+Files:
+- `Demo1.java` through `Demo5.java`
+- `notes.md`
+
 ## Important Concepts Covered
 - Program vs Process vs Thread
 - Process vs Thread comparison
@@ -154,6 +166,8 @@ Files:
 - compare-and-set, lock-free progress, and ABA mitigation with versioning
 - executor hierarchy, futures, and executor lifecycle
 - thread pools, blocking queues, scheduling, and rejection policies
+- Future overloads and limitations, CompletableFuture composition
+- ForkJoinPool work stealing, ThreadLocal state, and virtual threads
 
 ## How to Run
 Compile the Java files using:
